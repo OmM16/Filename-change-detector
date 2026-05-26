@@ -67,4 +67,4 @@ def check_malware(filepath):
                                             
 # Usage
 file_paths = [r"C:\Users\Admin\Desktop",r"C:\Users\Admin\Downloads",r"C:\Users\Admin\Documents",r"C:\Users\Admin\Picturs",r"C:\Users\Admin\Video"] #your path
-thread_map(check_malware,file_paths)
+thread_map(check_malware,file_paths,max_workers=5)
